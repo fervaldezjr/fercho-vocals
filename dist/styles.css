@@ -692,10 +692,6 @@ video {
   margin-right: 0.75rem;
 }
 
-.ms-2 {
-  margin-inline-start: 0.5rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -749,10 +745,6 @@ video {
   height: 4rem;
 }
 
-.h-3\.5 {
-  height: 0.875rem;
-}
-
 .h-5 {
   height: 1.25rem;
 }
@@ -775,10 +767,6 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-3\.5 {
-  width: 0.875rem;
 }
 
 .w-5 {
@@ -991,18 +979,8 @@ video {
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .bg-black\/30 {
   background-color: rgb(0 0 0 / 0.3);
-}
-
-.bg-blue-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .bg-brand-primary {
@@ -1023,11 +1001,6 @@ video {
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .bg-gray-800 {
@@ -1052,10 +1025,6 @@ video {
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
-}
-
-.bg-\[url\(\'\.\.\/images\/fercho-hero-image\.png\'\)\] {
-  background-image: url('../images/fercho-hero-image.png');
 }
 
 .bg-\[url\(\'https\:\/\/img\.freepik\.com\/free-vector\/gradient-blur-pink-blue-abstract-background_53876-117324\.jpg\'\)\] {
@@ -1176,11 +1145,6 @@ video {
   padding-bottom: 6rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1196,10 +1160,6 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .pt-4 {
@@ -1308,10 +1268,6 @@ video {
   line-height: 2rem;
 }
 
-.leading-none {
-  line-height: 1;
-}
-
 .leading-relaxed {
   line-height: 1.625;
 }
@@ -1406,6 +1362,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1413,10 +1374,6 @@ video {
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.bg-blend-multiply {
-  background-blend-mode: multiply;
 }
 
 .bg-blend-overlay {
@@ -1473,16 +1430,6 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.hover\:bg-blue-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-700:hover {
@@ -1550,16 +1497,6 @@ video {
   --tw-ring-inset: inset;
 }
 
-.focus\:ring-blue-300:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
-}
-
-.focus\:ring-gray-400:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
-}
-
 .focus\:ring-lime-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(190 242 100 / var(--tw-ring-opacity));
@@ -1578,10 +1515,6 @@ video {
 
   .sm\:ml-6 {
     margin-left: 1.5rem;
-  }
-
-  .sm\:ms-4 {
-    margin-inline-start: 1rem;
   }
 
   .sm\:mt-0 {
@@ -1612,10 +1545,6 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
   .sm\:items-center {
     align-items: center;
   }
@@ -1642,12 +1571,6 @@ video {
 
   .sm\:gap-y-16 {
     row-gap: 4rem;
-  }
-
-  .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .sm\:p-10 {
@@ -1766,11 +1689,6 @@ video {
     padding-right: 0px;
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1879,11 +1797,6 @@ video {
     padding-bottom: 4rem;
   }
 
-  .lg\:py-56 {
-    padding-top: 14rem;
-    padding-bottom: 14rem;
-  }
-
   .lg\:\!text-2xl {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
@@ -1892,11 +1805,6 @@ video {
   .lg\:\!text-5xl {
     font-size: 3rem !important;
     line-height: 1 !important;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .lg\:text-xl {
@@ -1966,11 +1874,6 @@ video {
   .dark\:hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .dark\:focus\:ring-blue-900:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(30 58 138 / var(--tw-ring-opacity));
   }
 
   .dark\:focus\:ring-lime-800:focus {
