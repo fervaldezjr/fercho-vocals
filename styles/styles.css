@@ -1,3 +1,20 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Para móviles (pantallas pequeñas) */
+@media only screen and (max-width: 600px) {
+    .bg-small {
+        background-repeat: no-repeat;
+        background-size:300%;
+        background-attachment: fixed;
+        background-position-x: 25%;
+    }
+}
+
+/* Para tablets (pantallas medianas) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .bg-small {
+        background-position: 50px 100px; /* Cambia los valores a tu necesidad */
+    }
+}
