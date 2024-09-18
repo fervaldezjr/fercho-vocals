@@ -1,5 +1,5 @@
 {
-  "name": "mi-proyecto",
+  "name": "fercho-santillana-vocal-studio",
   "version": "1.0.0",
   "scripts": {
     "build": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --watch"
