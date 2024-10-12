@@ -44,84 +44,98 @@
 <body class="text-gray-900">
 
   <nav class="bg-gray-800 bg-opacity-50 backdrop-blur-md fixed w-full" aria-label="Main Navigation">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="relative flex h-16 items-center justify-between">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
-          <button type="button"
-            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-            aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
-            <span class="absolute -inset-0.5"></span>
-            <span class="sr-only">Open main menu</span>
-            <!-- Icon when menu is closed -->
-            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-            <!-- Icon when menu is open -->
-            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button -->
+        <button type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <!-- Icon when menu is closed -->
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+               aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <!-- Icon when menu is open -->
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+               aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <!-- Logo de la empresa -->
+        <div class="flex flex-shrink-0 items-center">
+          <img class="h-8 w-auto" src="../images/ferchosantillana-logo-compress.webp" alt="Fercho Santillana Logo"
+               aria-label="Fercho Santillana Logo">
         </div>
-        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-          <!-- Logo de la empresa -->
-          <div class="flex flex-shrink-0 items-center">
-            <img class="h-8 w-auto" src="../images/ferchosantillana-logo-compress.webp" alt="Fercho Santillana Logo"
-              aria-label="Fercho Santillana Logo">
-          </div>
 
-          <!-- Contenido de navegación -->
-          <div class="hidden sm:ml-6 sm:block">
-            <div class="flex space-x-4">
-              <a href="../index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Inicio</a>
-              <a href="../pages/about-me.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Sobre mi</a>
+        <!-- Contenido de navegación -->
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <a href="../index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Inicio</a>
+            <a href="../pages/about-me.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Sobre mi</a>
+
+            <!-- Dropdown for Servicios (Desktop) -->
+            <div class="relative group">
               <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Servicios</a>
-              <a href="../pages/methods.html"  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Métodos</a>
-              <a href="../pages/contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contacto</a>
+              <div class="absolute hidden group-hover:block bg-gray-800 text-white rounded-md mt-2 w-60">
+                <a href="../pages/clases-canto.html" class="block px-4 py-2 hover:bg-gray-700">Clases de Canto y Técnica Vocal</a>
+                <a href="../pages/vocalcoaching.html" class="block px-4 py-2 hover:bg-gray-700">Vocal Coaching</a>
+                <a href="../pages/pedagogiavocal.html" class="block px-4 py-2 hover:bg-gray-700">Pedagogía Vocal para Profesores de Canto</a>
+              </div>
             </div>
-          </div>
-        </div>  
 
-        <!-- Botón "Reserva tu clase" -->
-        <div
-          class="hidden md:flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0 absolute inset-y-0 right-0">
-          <a href="https://eholo.health/es/centros/elnucleo/fernandosantillana85" target="_blank"
-            class="flex items-center text-gray-900 bg-gradient-to-r from-brand-secondary via-[#65ec9b] to-brand-secondary hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-            Agenda tu clase
-            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 rtl:rotate-180 ml-1" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
+            <a href="../pages/methods.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Métodos</a>
+            <a href="../pages/contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contacto</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
-          <a href="../index.html" class="block rounded-md  px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Inicio</a>
-          <a href="../pages/about-me.html"
-            class="block rounded-md  px-3 py-2 text-base font-medium  text-gray-300 hover:bg-gray-700">Sobre mi</a>
-            <a href="#"
-            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-gray-700" aria-current="page">Servicios</a>
-            <a href="../pages/methods.html"
-            class="block rounded-md  px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700">Métodos</a>
-          <a href="../pages/contact.html"
-            class="block rounded-md  px-3 py-2 text-base font-medium text-gray-300  hover:bg-gray-700">Contacto</a>
-          <a href="https://eholo.health/es/centros/elnucleo/fernandosantillana85" target="_blank"
-            class="flex items-center text-gray-900 bg-gradient-to-r from-brand-secondary via-[#65ec9b] to-brand-secondary hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-            Agenda tu clase
-            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 rtl:rotate-180 ml-1" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
-        </div>
+      <!-- Botón "Reserva tu clase" -->
+      <div
+              class="hidden md:flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0 absolute inset-y-0 right-0">
+        <a href="https://eholo.health/es/centros/elnucleo/fernandosantillana85" target="_blank"
+           class="flex items-center text-gray-900 bg-gradient-to-r from-brand-secondary via-[#65ec9b] to-brand-secondary hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+          Agenda tu clase
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-4 rtl:rotate-180 ml-1" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
     </div>
-  </nav>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="sm:hidden hidden" id="mobile-menu">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <a href="../index.html" class="block rounded-md  px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Inicio</a>
+      <a href="../pages/about-me.html" class="block rounded-md  px-3 py-2 text-base font-medium  text-gray-300 hover:bg-gray-700">Sobre mi</a>
+
+      <!-- Dropdown for Servicios (Mobile) -->
+      <a href="#" id="services-mobile" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-gray-700" aria-current="page">Servicios</a>
+      <div id="mobile-services-dropdown" class="hidden space-y-1 px-2 pb-3 pt-2">
+        <a href="../pages/clases-canto.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700">Clases de Canto y Técnica Vocal</a>
+        <a href="../pages/vocalcoaching.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700">Vocal Coaching</a>
+        <a href="../pages/pedagogiavocal.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700">Pedagogía Vocal para Profesores de Canto</a>
+      </div>
+
+      <a href="../pages/methods.html" class="block rounded-md  px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700">Métodos</a>
+      <a href="../pages/contact.html" class="block rounded-md  px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700">Contacto</a>
+      <a href="https://eholo.health/es/centros/elnucleo/fernandosantillana85" target="_blank"
+         class="flex items-center text-gray-900 bg-gradient-to-r from-brand-secondary via-[#65ec9b] to-brand-secondary hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+        Agenda tu clase
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 rtl:rotate-180 ml-1" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <section
@@ -130,8 +144,7 @@
     <div class="flex-1 flex items-center">
       <div class="text-center mx-auto">
         <h1 id="hero-title" class="text-4xl font-extrabold sm:text-7xl">Servicios</h1>
-        <p class="text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">¡Juntos crearemos un plan
-          personalizado para elevar tu voz!</p>
+        <p class="text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Descubre tu verdadera voz y lleva tu técnica al siguiente nivel desde la primera clase</p>
       </div>
     </div>
   </section>
@@ -152,7 +165,7 @@
         <!-- Servicio -->
         <div
           class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-brand-primary hover:shadow-2xl hover:bg-violet-400 transition-all duration-500 hover:text-gray-800 rounded-lg border border-gray-400 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800">
-          <h3 class="mb-4 text-2xl font-semibold">Clase Individual</h3>
+          <h3 class="mb-4 text-2xl font-semibold">Clases de canto y técnica vocal</h3>
           <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-5xl font-extrabold">55€</span>
           </div>
@@ -179,14 +192,13 @@
               <span>Clase de 55 minutos</span>
             </li>
           </ul>
-          <a href="https://eholo.health/es/centros/elnucleo/fernandosantillana85" target="_blank"
-            class="text-black bg-brand-secondary hover:bg-green-400 transition-all duration-500 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Reserva
-            tu clase individual</a>
+          <a href="../pages/clases-canto.html" target="_blank"
+            class="text-black bg-brand-secondary hover:bg-green-400 transition-all duration-500 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Obtener más información</a>
         </div>
         <!-- Servicio -->
         <div
           class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-brand-primary hover:shadow-2xl hover:bg-violet-400 transition-all duration-500 hover:text-gray-800 rounded-lg border border-gray-400 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 ">
-          <h3 class="mb-4 text-2xl font-semibold">Pack Mensual</h3>
+          <h3 class="mb-4 text-2xl font-semibold">Vocal Coaching</h3>
           <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-5xl font-extrabold">200€</span>
           </div>
@@ -211,14 +223,13 @@
               <span>Clases de 55 minutos</span>
             </li>
           </ul>
-          <a href="https://eholo.health/es/centros/elnucleo/fernandosantillana85" target="_blank"
-            class="text-black bg-brand-secondary hover:bg-green-400 transition-all duration-500 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Reserva
-            tu pack mensual</a>
+          <a href="../pages/vocalcoaching.html" target="_blank"
+            class="text-black bg-brand-secondary hover:bg-green-400 transition-all duration-500 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Ver todos los detalles</a>
         </div>
         <!-- Servicio -->
         <div
           class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-brand-primary hover:shadow-2xl hover:bg-violet-400 transition-all duration-500 hover:text-gray-800 rounded-lg border border-gray-400 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 ">
-          <h3 class="mb-4 text-2xl font-semibold">Diagnóstico Vocal</h3>
+          <h3 class="mb-4 text-2xl font-semibold">Pedagogía vocal para profesores de canto</h3>
           <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-5xl font-extrabold">25€</span>
           </div>
@@ -243,329 +254,12 @@
               <span>Clase de 20 minutos</span>
             </li>
           </ul>
-          <a href="https://eholo.health/es/centros/elnucleo/fernandosantillana85" target="_blank"
-            class="text-black bg-brand-secondary hover:bg-green-400 transition-all duration-500 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Reserva
-            tu diagnóstico vocal</a>
-        </div>
-      </div>
-  </section>
-
-  <!-- Reseñas -->
-  <section
-    class="bg-brand-primary bg-right bg-no-repeat bg-cover bg-[url('https://wallpaperaccess.com/full/1385574.jpg')]"
-    aria-labelledby="reviews-title">
-    <div class="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-      <div class="md:flex md:items-end md:justify-between">
-        <div class="max-w-xl">
-          <h2 id="reviews-title" class="text-4xl font-bold tracking-tight text-brand-secondary sm:text-5xl">
-            Te lo cuentan mis alumnos
-          </h2>
-
-          <p class="mt-6 max-w-lg leading-relaxed text-white">
-            Valorados con 5 estrellas por nuestros clientes, me enorgullece ofrecer un servicio excepcional en cada
-            interacción. Me dedico a superar expectativas y garantizar una experiencia de primera calidad. ¡Tu
-            satisfacción es mi prioridad!
-          </p>
-        </div>
-
-        <a target="_blank"
-          href="https://www.google.com/search?sca_esv=8431c7f1e33c912b&sxsrf=ADLYWIJYEQ5KRax3YOacvh0yeB9AnRHCgw:1723407521468&q=fercho+santillana&uds=ADvngMgcma2krFDWAfXM9WWaYuEs5-9mFgvssx-OaTCqniaTzv8QWz27QT4Rf6PnToExUeCOwzFVlGJZGZKevBkK5eel4IcO7NHxBLFQmBGXEy4oUjlkcbMdKIH9xl1U2fafpnO1gdK_&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7oR-tCIU50R4JAYog4RF_3wQNwMtOUqQz2nlphZ6GdbG8tBaoCO2BUEK2s1YVTssMKoxdmo%3D&sa=X&ved=2ahUKEwjc_vqo4e2HAxUaTqQEHTrgBTsQ3PALegQIGBAE&biw=1920&bih=932&dpr=1.5"
-          class="flex items-center text-gray-900 bg-gradient-to-r from-brand-secondary via-[#65ec9b] to-brand-secondary hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-          Mirá todas las reseñas
-          <svg xmlns="http://www.w3.org/2000/svg" class="size-4 rtl:rotate-180 ml-1" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
-        </a>
-      </div>
-
-      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-        <blockquote
-          class="rounded-lg border border-gray-400 flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
-          <div>
-            <div class="flex gap-0.5 text-green-500">
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-            </div>
-
-            <div class="mt-4">
-              <p class="text-2xl font-bold text-brand-primary sm:text-3xl">Juana Arauz Castex</p>
-              <p class="mt-4 leading-relaxed text-gray-700">
-                Fernando es un excelente coach vocal. Vengo trabajando en mi
-                entrenamiento vocal desde hace tiempo y encontré en las clases de canto de Fernando resultados
-                muy rápidos de los que hoy me siento tan orgullosa y sorprendida. Qué gusto ser alumna de un
-                profesor de canto tan profesional y efectivo! Su estudio te hace sentir profesional. Me sirvió
-                muchísimo el diagnóstico porque rápidamente detectó mi camino de crecimiento como cantante.
-                Luego de las vocalizaciones, mi registro se amplio notablemente. Fue una sensación increíble
-                notar que contaba con esa posibilidad. Solo necesité el guia correcto para que me indique como
-                hacerlo. Estoy muy feliz con tus clases Fernando!!!
-              </p>
-            </div>
-          </div>
-        </blockquote>
-
-        <blockquote
-          class="rounded-lg border border-gray-400 flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
-          <div>
-            <div class="flex gap-0.5 text-green-500">
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.541.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-            </div>
-
-            <div class="mt-4">
-              <p class="text-2xl font-bold text-brand-primary sm:text-3xl">Liz Sanchez Acosta</p>
-
-              <p class="mt-4 leading-relaxed text-gray-700">
-                Un sitio acogedor, con un piano hermoso y te sientes como un cantante
-                famoso pero sobre todo tiene todo lo que necesitas para ver clases, buenos equipos, buen
-                ambiente y lo más importante un profesor muy profesional que te hace sentir a gusto en esa hora
-                de aprender y desconectar a la vez, para mí es como terapia.
-              </p>
-            </div>
-          </div>
-        </blockquote>
-
-        <blockquote
-          class="rounded-lg border border-gray-400 flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
-          <div>
-            <div class="flex gap-0.5 text-green-500">
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.541.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-            </div>
-
-            <div class="mt-4">
-              <p class="text-2xl font-bold text-brand-primary sm:text-3xl">Axelle Sarray</p>
-
-              <p class="mt-4 leading-relaxed text-gray-700">
-                Realmente aprecié aprender con Fernando ya que fue muy rápido en
-                identificar mis puntos de bloqueo y adaptar las lecciones a mi ritmo y necesidades. Es un gran
-                oyente y sus consejos me ayudaron a lograr avances inesperados. Al final de mis lecciones (4 en
-                total), noté una diferencia positiva en mi voz y realmente me sentí más segura.
-
-                Fernando también es una persona muy sonriente, cálida y con una energía amable y radiante. Lo
-                recomiendo sin dudarlo. No puedo esperar a volver a Barcelona para recibir más lecciones.
-
-                ¡Gracias Fernando!
-              </p>
-            </div>
-          </div>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- Conoce mi historia -->
-  <section id="about-me"
-    class="bg-white bg-right bg-no-repeat bg-cover bg-[url('https://img.freepik.com/free-vector/gradient-blur-pink-blue-abstract-background_53876-117324.jpg')] dark:bg-gray-900"
-    aria-labelledby="about-title">
-    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-      <img class="w-full dark:hidden" src="../images/fercho-sobre-mi-compress.webp" alt="Imagen sobre Fercho Santillana"
-        loading="lazy">
-      <img class="w-full hidden dark:block" src="../images/fercho-sobre-mi-compress.webp"
-        alt="Imagen sobre Fercho Santillana" loading="lazy">
-      <div class="mt-4 md:mt-0">
-        <h2 id="about-title" class="mb-4 text-4xl tracking-tight font-extrabold text-brand-primary ">Conoce mi historia
-        </h2>
-        <p class="mb-6 font-normal text-gray-800 md:text-lg ">Comencé mi viaje como actor de teatro
-          musical, sumergiéndome en la interpretación y la música. A lo largo de los años, me formé con maestros de
-          canto y actuación, lo que me llevó a un emocionante viaje en el mundo del teatro. Pero mi pasión no se detuvo
-          ahí. Durante más de 12 años, me dediqué a la enseñanza del canto en diversas ciudades, escuelas y
-          Universidades, desde Puebla, Ciudad de México hasta Playa del Carmen y actualmente, Barcelona. En 2019, obtuve
-          la certificación del Institute for Vocal Advancement, una organización de renombre internacional. Desde
-          entonces, hemos estado trabajando en investigaciones y desarrollo continuo de la técnica vocal, lo que ha sido
-          fundamental en mi proceso docente. Mi metodología se centra en entrenar voces de manera libre y balanceada,
-          desde la base hasta el final del rango, sin interrupciones ni cambios abruptos de calidad vocal. Ayudo a mis
-          estudiantes a descubrir y hacer conscientes las sensaciones de una voz en equilibrio, sin recurrir a
-          indicaciones obsoletas.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Instagram -->
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-  <div class="elfsight-app-4351eff3-bcd4-4f47-a7e8-0b209efc0b84" data-elfsight-app-lazy></div>
-
-  <!-- Porqué elegirnos -->
-  <div class="bg-white py-24 sm:py-32" aria-labelledby="why-title">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 id="why-title" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">¿Porqué elegirme?</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">Estos son solo algunos de los motivos por los cuales marco la
-          diferencia.</p>
-      </div>
-      <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-        <div class="p-8 sm:p-10 lg:flex-auto">
-          <h3 class="text-2xl font-bold tracking-tight text-gray-900">Instructor certificado en el Institute for Vocal
-            Advancement</h3>
-          <p class="mt-6 text-base leading-7 text-gray-600">Descubre tu voz con un <a class="text-brand-primary"
-              target="_blank" href="https://www.vocaladvancement.com/en-us/find-a-teacher/profile/522">instructor
-              certificado por el Institute for Vocal Advancement (IVA)</a>. Clases adaptadas a tu nivel y estilo,
-            asegurando
-            un progreso efectivo y rápido. Técnicas probadas y avaladas internacionalmente para mejorar tu técnica
-            vocal. Desarrollo de todas las áreas de tu voz, desde el rango hasta la expresividad. Aprende con un
-            instructor que combina conocimiento profundo y pasión por la enseñanza.</p>
-          <div class="mt-10 flex items-center gap-x-4">
-            <h4 class="flex-none text-sm font-semibold leading-6 text-indigo-600">Qué obtendrás</h4>
-            <div class="h-px flex-auto bg-gray-100"></div>
-          </div>
-          <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Enfoque Personalizado
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Mejora Integral
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Experiencia y Profesionalismo
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Profesor con certificación IVA
-            </li>
-          </ul>
-        </div>
-        <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-          <div
-            class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-            <div class="mx-auto max-w-xs px-8">
-              <a class="text-brand-primary" target="_blank"
-                href="https://www.vocaladvancement.com/en-us/find-a-teacher/profile/522"><img
-                  src="../images/iva-certificado-compress.webp" alt="Certificado IVA de Fernando Santillana"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-        <div class="p-8 sm:p-10 lg:flex-auto">
-          <h3 class="text-2xl font-bold tracking-tight text-gray-900">Clases multilenguaje</h3>
-          <p class="mt-6 text-base leading-7 text-gray-600">Mejora tu técnica vocal en el idioma que prefieras.
-            Ofrecemos clases en Español, Inglés y Portugués, adaptadas a tus necesidades lingüísticas y culturales.
-            Estudia en tu idioma nativo para una comprensión más profunda y fluida de las técnicas vocales. Desarrolla
-            tu voz con matices y expresiones propias de tu lengua, alcanzando una interpretación más natural. Conéctate
-            con un profesor que entiende las particularidades de tu idioma, incluso si vives fuera de Barcelona.
-            Establece una comunicación clara y efectiva, eliminando barreras lingüísticas para un aprendizaje más
-            eficiente.</p>
-          <div class="mt-10 flex items-center gap-x-4">
-            <h4 class="flex-none text-sm font-semibold leading-6 text-indigo-600">Qué obtendrás</h4>
-            <div class="h-px flex-auto bg-gray-100"></div>
-          </div>
-          <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Aprendizaje Cómodo
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Expresión Auténtica
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Acceso Global
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Flexibilidad y Conexión
-            </li>
-          </ul>
-        </div>
-        <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-          <div
-            class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-            <div class="mx-auto max-w-xs px-8">
-              <img src="../images/multilenguaje-compress.webp" alt="Certificado IVA de Fernando Santillana"
-                loading="lazy">
-            </div>
-          </div>
+          <a href="../pages/pedagogiavocal.html" target="_blank"
+            class="text-black bg-brand-secondary hover:bg-green-400 transition-all duration-500 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Obtiene más información</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Contact -->
   <section class="px-8 py-8 lg:py-16" id="contact" aria-labelledby="contact-title">
@@ -574,10 +268,10 @@
         class="block antialiased tracking-normal font-sans font-semibold leading-snug text-blue-gray-900 mb-4 !text-base lg:!text-2xl">
         ¡Ven a conocerme!
       </h5>
-      <h1
+      <h6
         class="block antialiased tracking-normal font-sans font-semibold leading-tight text-blue-gray-900 mb-4 !text-3xl lg:!text-5xl">
         Estoy para ayudarte
-      </h1>
+      </h6>
       <p
         class="block antialiased font-sans leading-relaxed text-inherit mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-3xl !text-gray-500">
         Puedes ponerte en contacto de la forma que más cómodo te sientas.
@@ -585,7 +279,7 @@
       <div class="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
         <iframe title="Fercho Santillana studio location in Google Maps" class="w-full h-full lg:max-h-[510px]"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.514589972988!2d2.1677149000000004!3d41.4063469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a360e7118705%3A0xfcf73a6d07f956e9!2sFercho%20Santillana%20Vocal%20Studio!5e0!3m2!1ses-419!2ses!4v1719862062054!5m2!1ses-419!2ses"
-          frameborder="0"></iframe>
+          ></iframe>
         <dl class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
           <div class="border-t border-gray-200 pt-4">
             <dt class="font-medium text-gray-900">Ubicación</dt>

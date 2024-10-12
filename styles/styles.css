@@ -18,3 +18,12 @@ html {
         background-position: 50px 100px; /* Cambia los valores a tu necesidad */
     }
 }
+
+/* Dropdown para escritorio */
+.group:hover .group-hover\:block {
+    display: block;
+}
+
+.group-hover\:block {
+    display: none;
+}
